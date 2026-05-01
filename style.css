@@ -50,65 +50,43 @@ nav a:hover, nav a.active { color: var(--primary-color); }
 .logic-list { background: #f8f9fa; padding: 20px; border-radius: 10px; border: 1px solid #eee; }
 .back-link { display: inline-block; margin-bottom: 20px; color: var(--primary-color); text-decoration: none; font-weight: bold; }
 
-/* --- 輕量化手機版設計 --- */
 @media (max-width: 768px) {
-
-    /* 1. 減少導覽列整體的上下高度 */
-    nav {
-        padding: 5px 0;
-    }
-
+    /* 1. 讓導覽列容器變高，分兩層排隊 */
     .nav-container {
-        flex-direction: column;
-        padding: 5px;
-        gap: 5px;
+        flex-direction: column; /* 強制上下分層 */
+        align-items: center;    /* 全部置中 */
+        padding: 10px 5px;
     }
 
-    /* 2. 讓 Logo 小一點，不要佔位置 */
+    /* 2. 讓左邊的 Logo (名字) 獨佔第一層，並縮小字體 */
     .logo {
-        font-size: 1rem;
+        font-size: 1.1rem;
+        margin-bottom: 10px; /* 留一點距離給下面的按鈕 */
+        text-align: center;
+        width: 100%;        /* 讓它佔滿寬度 */
     }
 
-    /* 3. 讓選單按鈕變得更小、更精緻 */
+    /* 3. 選單區塊：讓按鈕們整齊排在第二層 */
     nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 6px; /* 縮小按鈕與按鈕之間的縫隙 */
-        margin-top: 5px;
+        width: 100%;
+        justify-content: center; /* 按鈕集體置中 */
+        gap: 5px;               /* 縮小按鈕之間的縫隙 */
+        display: flex;
+        flex-wrap: wrap;        /* 放不下自動換行，不會重疊 */
     }
 
+    /* 4. 按鈕本人：縮小間距與字體，看起來才精緻 */
     nav a {
-        font-size: 0.75rem;     /* 再縮小字體，確保一行能塞下更多字 */
-        padding: 4px 8px;       /* 縮減按鈕內部的上下左右空間 */
-        background: rgba(255,255,255,0.05); /* 淡淡的背景色 */
-        border: 1px solid rgba(255,255,255,0.15); /* 加個極細邊框，更有質感 */
+        font-size: 0.8rem;      /* 縮小字體 */
+        padding: 4px 6px;       /* 極限縮小內距 */
+        background: rgba(255, 255, 255, 0.1);
         border-radius: 4px;
+        white-space: nowrap;    /* 強制文字不換行（例如：自主學習 四個字要在同一行） */
     }
 
-    /* 4. 縮小首頁標題區塊，避免滑老半天還沒看到內容 */
+    /* 5. 調整主頁內容區塊，避免被導覽列擋住 */
     .hero-section {
-        padding: 25px 10px;
-        margin: 15px 10px;
-        border-radius: 15px;
-    }
-
-    h1 {
-        font-size: 1.5rem;      /* 讓名字在手機上不要太誇張 */
-        margin-bottom: 8px;
-    }
-
-    .intro-text {
-        font-size: 1rem;        /* 縮小引言字體 */
-    }
-
-    /* 5. 讓卡片左右留白變小，增加螢幕利用率 */
-    .container {
-        padding: 0 10px;
         margin-top: 20px;
-    }
-
-    .project-card {
-        padding: 15px;
-        margin-bottom: 15px;
+        padding: 30px 15px;
     }
 }
