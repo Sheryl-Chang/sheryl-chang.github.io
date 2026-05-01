@@ -49,3 +49,42 @@ nav a:hover, nav a.active { color: var(--primary-color); }
 .highlight-box { background: #fff9db; border-left: 5px solid #f1c40f; padding: 15px; margin: 20px 0; font-style: italic; }
 .logic-list { background: #f8f9fa; padding: 20px; border-radius: 10px; border: 1px solid #eee; }
 .back-link { display: inline-block; margin-bottom: 20px; color: var(--primary-color); text-decoration: none; font-weight: bold; }
+
+@media (max-width: 768px) {
+
+    /* 讓導覽列容器變成垂直排列 */
+    .nav-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    /* 讓選單文字自動換行並靠中 */
+    nav ul {
+        flex-wrap: wrap;       /* 核心：讓按鈕放不下時自動換行 */
+        justify-content: center;
+        gap: 10px;             /* 縮小按鈕間距 */
+        margin-top: 10px;
+    }
+
+    nav a {
+        font-size: 0.85rem;    /* 稍微縮小字體 */
+        padding: 5px 10px;
+        background: rgba(255,255,255,0.1); /* 增加一點背景色讓按鈕感更明顯 */
+        border-radius: 5px;
+    }
+
+    /* 調整主頁 Hero 區塊，避免在手機上太巨大 */
+    .hero-section {
+        padding: 30px 15px;
+        margin-top: 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    /* 讓卡片在手機上的內距縮小，留出更多空間給文字 */
+    .project-card, .detail-container {
+        padding: 20px;
+    }
+}
