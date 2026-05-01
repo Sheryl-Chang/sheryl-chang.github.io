@@ -1,60 +1,35 @@
-<!DOCTYPE html>
-<html lang="zh-Hant">
-<head>
-    <meta charset="UTF-8">
-    <title>Sheryl 的學習歷程首頁</title>
-    <style>
-        body { font-family: "PingFang TC", sans-serif; line-height: 1.8; margin: 0; padding: 0; }
-        nav { background: #2c3e50; padding: 15px; }
-        nav ul { list-style: none; display: flex; justify-content: center; gap: 20px; margin: 0; padding: 0; }
-        nav a { color: white; text-decoration: none; font-weight: bold; }
-        nav a:hover { color: #3498db; }
-        .container { max-width: 800px; margin: 40px auto; padding: 0 20px; }
-        h1 { border-bottom: 2px solid #3498db; padding-bottom: 10px; }
-    </style>
-</head>
-<body>
-
-<nav>
-    <ul>
-        <li><a href="index.html">首頁</a></li>
-        <li><a href="02.study.html">自主學習</a></li>
-        <li><a href="03.competition.html">競賽表現</a></li>
-        <li><a href="04.certificates.html">證照檢定</a></li>
-        <li><a href="05.activities.html">社團活動</a></li>
-        <li><a href="06.service.html">服務學習</a></li>
-    </ul>
-</nav>
-
 <div class="container">
-    <h1>張世柔的學習歷程</h1>
-    <p>我是張世柔，就讀臺北市立景美女子高級中學。 在高中三年裡，我主要透過自主學習與社團實踐，探索資訊技術與管理溝通的結合。比起華麗的口號，我更喜歡從動手解決問題中獲得回饋。</p>
-    <h3>核心學習經歷</h3>
-    <ul>
-    <li>
-        <strong>程式開發與 AI 認證：</strong><br>
-        受父親啟發，我開始自學 Python 程式設計，完成了 Hangman 遊戲實作，並從中理解邏輯判斷與演算法的基本架構。目前我正準備 AI-900 (Azure AI Fundamentals) 證照考試，希望從基礎理論切入，建立對人工智慧應用場景的完整認知。
-    </li>
-    <li>
-        <strong>數據與行為觀察：</strong><br>
-        我對「人如何做決定」感到好奇。在自主學習計畫中，我針對行為經濟學（如沉沒成本、稟賦效應）進行研究，練習使用 Google Sheets 進行數據清洗與圖表分析。這次經驗讓我體會到，數據分析是理解人類行為規律的重要工具。
-    </li>
-    <li>
-        <strong>組織與溝通實務：</strong><br>
-        在擔任 MUN 模擬聯合國社團公關長與活動長期間，我負責籌劃營隊與外部交流。這段經驗讓我磨練了資源調度與多方溝通的能力，也讓我意識到，無論科技如何進步，背後的行政協調與團隊合作依然是成功的關鍵。
-    </li>
-</ul>
-    <ul>
-    <li>
-        <strong>學習動機與目標：</strong><br>
-        我對資訊科技的興趣，源於探索「技術實作」與「實務需求」之間的整合。在未來的專業學習中，我期望在精進技術開發能力的同時，能進一步學習如何優化決策流程與組織效能，將數位工具落實於解決真實世界的複雜問題。
-    </li>
-</ul>
-    <p>
-    本空間完整記錄了我高中三年的學習軌跡，內容涵蓋自主學習、競賽表現、證照檢定、服務學習及社團活動經驗。
-    這是我結合資訊實作與實務參與的成果展示，誠摯邀請您透過上方選單查看各項詳細內容。
-</p>
-</div>
+    <!-- 個人簡介區 -->
+    <div class="hero-section">
+        <h1>我是張世柔 (Sheryl Chang)</h1>
+        <p class="school-tag">臺北市立景美女子高級中學</p>
+        <p class="intro-text">
+            比起華麗的口號，我更喜歡從動手解決問題中獲得回饋。在高中三年裡，我主要透過<strong>自主學習</strong>與<strong>社團實踐</strong>，探索資訊技術與管理溝通的結合。
+        </p>
+    </div>
 
-</body>
-</html>
+    <!-- 三大核心亮點：橫向排版 -->
+    <div class="highlights-grid">
+        <div class="highlight-item">
+            <div class="icon">💻</div>
+            <h3>程式實作與 AI</h3>
+            <p>自學 Python 完成專案，並考取 AI-900 證照，建立對人工智慧應用的完整認知。</p>
+        </div>
+        <div class="highlight-item">
+            <div class="icon">📊</div>
+            <h3>數據行為觀察</h3>
+            <p>運用行為經濟學結合數據分析，練習使用 Google Sheets 進行數據清洗與規律探索。</p>
+        </div>
+        <div class="highlight-item">
+            <div class="icon">🤝</div>
+            <h3>組織與溝通</h3>
+            <p>擔任 MUN 社團幹部，負責籌劃百人營隊，磨練資源調度與多方溝通的核心能力。</p>
+        </div>
+    </div>
+
+    <!-- 學習動機區 -->
+    <div class="project-card" style="margin-top: 40px;">
+        <h3>📌 學習動機與未來目標</h3>
+        <p>我對資訊科技的興趣，源於探索「技術實作」與「實務需求」之間的整合。我期望在未來能進一步學習如何優化決策流程，將數位工具落實於解決真實世界的複雜問題。</p>
+    </div>
+</div>
