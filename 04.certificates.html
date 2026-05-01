@@ -2,14 +2,9 @@
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
-    <title>分頁標題 - Sheryl</title> <style>
-        /* 這裡的 CSS 保持跟首頁一樣，網站看起來才會統一 */
-        body { font-family: "PingFang TC", sans-serif; line-height: 1.8; margin: 0; padding: 0; }
-        nav { background: #2c3e50; padding: 15px; }
-        nav ul { list-style: none; display: flex; justify-content: center; gap: 20px; margin: 0; padding: 0; }
-        nav a { color: white; text-decoration: none; font-weight: bold; }
-        .container { max-width: 800px; margin: 40px auto; padding: 0 20px; }
-    </style>
+    <title>證照檢定 - Sheryl Chang</title>
+    <!-- 引入外部 CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -25,7 +20,37 @@
 </nav>
 
 <div class="container">
-    <h1>這裡是分頁標題</h1> <p>內容整理中...</p> </div>
+    <h1>📜 證照檢定：專業能力證明</h1>
+
+    <!-- 1. AI-900 -->
+    <div class="project-card">
+        <span class="tag">人工智慧 / 雲端運算</span>
+        <h3>Microsoft Certified: Azure AI Fundamentals (AI-900)</h3>
+        <p><strong>狀態：已通過考取</strong></p>
+        <p>掌握 Microsoft Azure 雲端平台的 AI 基本概念，包含機器學習、電腦視覺、自然語言處理（NLP）及生成式 AI 的倫理準則。</p>
+    </div>
+
+    <!-- 2. TOEIC -->
+    <div class="project-card">
+        <span class="tag">語文能力</span>
+        <h3>多益英語測驗 (TOEIC) - Listening and Reading</h3>
+        <p><strong>成績分數：</strong> 總分 685</p>
+        <ul>
+            <li>聽力 (Listening)：410 / 495</li>
+            <li>閱讀 (Reading)：275 / 495</li>
+        </ul>
+        <p>具備職場與學術英語的基礎，能有效理解商務場景下的各類資訊。</p>
+    </div>
+
+    <!-- 3. 高中英聽 -->
+    <div class="project-card">
+        <span class="tag">語文能力</span>
+        <h3>大考中心高中英語聽力測驗</h3>
+        <p><strong>測驗結果：</strong> A 級</p>
+        <p>具備優異的英語聽覺理解力，能精準捕捉對話重點並理解複雜的語意脈絡。</p>
+    </div>
+
+</div>
 
 </body>
 </html>
